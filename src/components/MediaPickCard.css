@@ -1,0 +1,106 @@
+.media-pick-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.media-pick-frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.media-pick-card.md .media-pick-frame {
+  width: 10.5em;
+  height: 8.5em;
+}
+
+.media-pick-card.sm .media-pick-frame {
+  width: 5.5em;
+  height: 4.6em;
+  border-radius: 16px;
+}
+
+.media-pick-card:hover .media-pick-frame {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+
+.media-pick-card.is-selected .media-pick-frame {
+  box-shadow:
+    0 0 0 2px rgba(96, 165, 250, 0.85),
+    0 0 28px rgba(59, 130, 246, 0.35);
+}
+
+.media-pick-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.45s ease-in-out;
+}
+
+.media-pick-normal {
+  opacity: 1;
+}
+
+.media-pick-hover {
+  opacity: 0;
+}
+
+.media-pick-active {
+  opacity: 0;
+}
+
+.media-pick-card:hover .media-pick-normal,
+.media-pick-card:active .media-pick-normal {
+  opacity: 0;
+}
+
+.media-pick-card:hover .media-pick-hover {
+  opacity: 1;
+}
+
+.media-pick-card:active .media-pick-hover {
+  opacity: 0;
+}
+
+.media-pick-card:active .media-pick-active,
+.media-pick-card.is-selected .media-pick-active {
+  opacity: 1;
+}
+
+.media-pick-card.is-selected .media-pick-normal,
+.media-pick-card.is-selected .media-pick-hover {
+  opacity: 0;
+}
+
+.media-pick-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 10em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.media-pick-card.is-selected .media-pick-label {
+  color: rgba(191, 219, 254, 0.95);
+}
+
+.media-pick-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}

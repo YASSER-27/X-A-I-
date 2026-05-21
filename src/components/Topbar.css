@@ -1,0 +1,211 @@
+/* ── Topbar ── */
+.topbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  height: 42px;
+  background-color: #0a0a0a;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  gap: 0;
+  z-index: 1000;
+  flex-shrink: 0;
+  overflow: visible;
+  user-select: none;
+  border-radius: 12px 12px 0 0;
+}
+
+[data-theme="soft-white"] .topbar {
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="soft-white"] .topbar-nav a {
+  color: #2d3642;
+}
+
+[data-theme="soft-white"] .topbar-nav a:hover {
+  background: rgba(20, 35, 60, 0.08);
+  color: #141b24;
+}
+
+/* ── Mac Traffic Light Buttons ── */
+.topbar-traffic-lights {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  -webkit-app-region: no-drag;
+  margin-left: 12px;
+}
+
+.traffic-btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  -webkit-app-region: no-drag;
+  padding: 0;
+}
+
+.traffic-btn svg {
+  opacity: 0;
+  transition: opacity 0.15s;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.topbar-traffic-lights:hover .traffic-btn svg {
+  opacity: 1;
+}
+
+.traffic-close {
+  background: #ff5f56;
+  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12);
+}
+
+.traffic-close:hover {
+  background: #ff3b30;
+}
+
+.traffic-minimize {
+  background: #ffbd2e;
+  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12);
+}
+
+.traffic-minimize:hover {
+  background: #f5a623;
+}
+
+.traffic-maximize {
+  background: #28cd41;
+  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12);
+}
+
+.traffic-maximize:hover {
+  background: #1db954;
+}
+
+.traffic-btn:active {
+  transform: scale(0.88);
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  -webkit-app-region: no-drag;
+}
+
+/* Invisible drag handle that fills the middle space */
+.topbar-drag {
+  flex: 1;
+  height: 100%;
+  -webkit-app-region: drag;
+  cursor: default;
+  min-width: 40px;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  -webkit-app-region: no-drag;
+}
+
+/* Logo */
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  opacity: 0.9;
+  transition: opacity 0.15s;
+  -webkit-app-region: no-drag;
+}
+
+.topbar-logo:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.topbar-logo img {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+/* Nav */
+.topbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  -webkit-app-region: no-drag;
+}
+
+.topbar-nav a {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.topbar-nav a:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.topbar-nav a.active {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ── AI Streaming indicator dot ── */
+.topbar-ai-dot {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  border: 2px solid var(--header-bg);
+  animation: aiPulse 1.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes aiPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+}
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
