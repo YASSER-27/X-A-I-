@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets_readme/showcase_08_Cylinder_Inward_1779382512.png" width="500" alt="Edit Img Tool Logo">
+  <img src="assets_readme/showcase_16_Floating_Shelf_1779390028.png" width="860" alt="X AI">
   <h1 align="center">X AI</h1>
   <p align="center">AI chat application</p>
 <p align="center">
@@ -45,6 +45,7 @@
 ---
 
 
+https://github.com/user-attachments/assets/51a9150f-4a37-4bc4-8206-da6612223e31
 
 
 ## 🎯 Overview
