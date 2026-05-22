@@ -8,7 +8,7 @@
 </p>
 
 
-<div align="center">
+<div align="left">
 
 ![XAI Logo](https://img.shields.io/badge/XAI-AI%20Chat-blue?style=for-the-badge&logo=artificial-intelligence)
 ![Version](https://img.shields.io/badge/version-1.3.0-green?style=for-the-badge)
@@ -48,13 +48,13 @@
 https://github.com/user-attachments/assets/51a9150f-4a37-4bc4-8206-da6612223e31
 
 
-## 🎯 Overview
+# Overview
 
 XAI is a sophisticated AI chat application that provides a seamless conversational experience with advanced features like voice interaction, context memory, quick prompts, and a beautiful glass-morphism UI. Built with modern web technologies and Electron for cross-platform desktop support.
 
 ---
 
-## ✨ Features
+# Features
 
 ### 🎨 Beautiful UI
 - **Glass-morphism Design**: Modern, elegant glass-frame styling throughout the application
@@ -94,7 +94,7 @@ XAI is a sophisticated AI chat application that provides a seamless conversation
 ---
 
 
-## 📸 Screenshots
+# Screenshots
 
 ### Main Interface
 - Beautiful glass-morphism UI
@@ -115,7 +115,7 @@ XAI is a sophisticated AI chat application that provides a seamless conversation
 
 ---
 
-## 🛠 Technology Stack
+# Technology Stack
 
 ### Frontend
 - **React 18.2.0**: UI library
@@ -138,7 +138,7 @@ XAI is a sophisticated AI chat application that provides a seamless conversation
 
 ---
 
-## 📦 Installation
+# Installation
 
 ### Prerequisites
 - Node.js (v18 or higher)
@@ -147,7 +147,7 @@ XAI is a sophisticated AI chat application that provides a seamless conversation
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/YASSER-27/xai.git
+git clone https://github.com/YASSER-27/X-A-I-.git
 cd xai
 ```
 
@@ -171,7 +171,7 @@ npm run dist
 ![showcase_16_Floating_Shelf_1779382404](assets_readme/showcase_16_Floating_Shelf_1779382404.png)
 
 
-## 🚀 Usage
+# Usage
 
 ### Starting the Application
 1. Launch the application
@@ -204,7 +204,7 @@ npm run dist
 
 ---
 
-## ⚙️ Configuration
+# Configuration
 
 ### Settings Panel
 Access settings by clicking the settings button or using `/settings` command.
@@ -226,16 +226,16 @@ Access settings by clicking the settings button or using `/settings` command.
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+# Keyboard Shortcuts
 
 | Shortcut | Action |
 |---------|--------|
-| `/help` | Show available commands |
-| `/settings` | Open settings panel |
+| `/alt+T` | mod call / msg |
+| `/wall` | change background image |
 | `/scal <value>` | Set UI scale (10-200%) |
 | `Ctrl+D` | Toggle history sidebar |
-| `Enter` | Send message |
-| `Shift+Enter` | New line in input |
+| `F10` | mod window fly |
+| `F8 | hide/show |
 
 ---
 
@@ -268,7 +268,7 @@ xai/
 
 ---
 
-## 🔨 Development
+# Development
 
 ### Running in Development Mode
 ```bash
@@ -293,7 +293,7 @@ npm run electron:build
 
 ---
 
-## 🤝 Contributing
+# Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -311,22 +311,22 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
+# License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👤 Author
+# Author
 
 **Yasser**
 
 - GitHub: [YASSER-27](https://github.com/YASSER-27)
-- Project: [XAI](https://github.com/YASSER-27/xai)
+- Project: [XAI](https://github.com/YASSER-27/X-A-I-.git)
 
 ---
 
-## 🙏 Acknowledgments
+# 🙏 Acknowledgments
 
 - LLaMA.cpp for AI model inference
 - React community for excellent libraries
@@ -483,7 +483,7 @@ XAI هو تطبيق دردشة ذكي متطور يوفر تجربة محادث�
 
 ### استنساخ المستودع
 ```bash
-git clone https://github.com/YASSER-27/xai.git
+git clone https://github.com/YASSER-27/X-A-I-.git
 cd xai
 ```
 
@@ -495,12 +495,6 @@ npm install
 ### تشغيل خادم التطوير
 ```bash
 npm run dev
-```
-
-### البناء للإنتاج
-```bash
-npm run build
-npm run electron:build
 ```
 
 ---
