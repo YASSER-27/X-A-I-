@@ -326,7 +326,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-# 🙏 Acknowledgments
+#  Acknowledgments
 
 - LLaMA.cpp for AI model inference
 - React community for excellent libraries
@@ -391,7 +391,7 @@ XAI هو تطبيق دردشة ذكي متطور يوفر تجربة محادث�
 
 ---
 
-## ✨ الميزات
+# ✨ الميزات
 
 ### 🎨 واجهة مستخدم جميلة
 - **تصميم الزجاج**: تصميم عصري وأنيق بتأثيرات الزجاج في جميع أنحاء التطبيق
@@ -654,7 +654,7 @@ npm run electron:build
 
 ---
 
-## 🙏 شكر وتقدير
+##شكر وتقدير
 
 - LLaMA.cpp لاستنتاج نموذج الذكاء الاصطناعي
 - مجتمع React للمكتبات الممتازة
